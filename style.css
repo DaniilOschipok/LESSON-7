@@ -1,0 +1,343 @@
+:root{
+    --accent: #F13C6E;
+    --dark: #333333;
+    --white: #FFFFFF;
+    --whiteOpacity: rgba(255, 255, 255, 0.4);
+    --dark-gray: #333333;
+    --gray: #828282;
+    --light-gray: #C4C4C4;
+    --lighter-gray: #EFEFEF;
+    --bold: 700;
+    --medium: 500;
+    --regular: 400;
+    --font: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: var(--font);
+    background: transparent;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+}
+
+.nav{
+    background-color: var(--lighter-gray);
+}
+
+.nav > .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav > .menu > .menu-ithem{
+    padding: 17px 10px;
+    font-weight: var(--regular);
+}
+
+.nav2{
+    background-color: var(--white);
+    border-top: 1px solid var(--lighter-gray);
+}
+
+.nav2 > .menu2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav2 > .menu2 > .menu-ithem2{
+    padding: 30px 15px;
+    font-weight: var(--regular);
+}
+
+.callback{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo > .logo_text{
+    text-transform: uppercase;
+    color: var(--accent);
+    font-size: 36px;
+    font-weight: var(--bold);
+    letter-spacing: 3.6px;
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.cta > a{
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: var(--regular);
+}
+
+.cta > .cta__btn{
+    font-weight: var(--regular);
+    color: var(--dark);
+    border-radius: 40px;
+    border: 2px solid;
+    border-color: var(--accent);
+    background-color:var(--white);
+    border-radius: 40px;
+    padding: 8px 50px;
+}
+
+.special{
+    background-color: var(--lighter-gray);
+    padding: 80px 0;
+    width: 100%;
+}
+
+.container{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.goods > .title{
+    background-color: var(--lighter-gray);
+    font-weight: var(--bold);
+    font-size: 24px;
+    padding-bottom: 38px;
+    align-self: center;
+    width: 80%;
+}
+
+.goods > .goods-list{
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.goods > .goods-list > .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    gap: 20px;
+    background-color: var(--white);
+}
+
+.goods > .goods-list > .item > img{
+    width: 125px;
+}
+
+.goods > .goods-list > .item > .name{
+    color: var(--dark-gray);
+    font-weight: var(--regular);
+    line-height: 140%;
+    text-align: center;
+    width: 80%;
+}
+
+.goods > .goods-list > .item > .price{
+    color: var(--dark);
+    font-weight: var(--medium);
+    text-align: center;
+    letter-spacing: 1.05px;
+    font-size: 21px;
+}
+
+.goods > .goods-list > .item > .btn{
+    border-radius: 30px;
+    background-color: var(--accent);
+    color: var(--white);
+    font-weight: var(--regular);
+    letter-spacing: 0.7px;
+    padding: 9px 53px;
+}
+
+.promo{
+    display: flex;
+    gap: 30px;
+    width: 90%; 
+    margin: 100px 0; 
+    justify-content: center;
+    align-items: stretch;
+}
+
+.promo > .card{
+    background-color: var(--accent);
+    padding: 35px 40px;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.promo > .card > .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.promo > .card > .content > .name{
+    color: var(--white);
+    font-weight: var(--bold);
+    font-size: 18px;
+}
+
+.promo > .card > .content > .text{
+    color: var(--white);
+    font-weight: var(--regular);
+    width: 60%;
+    line-height: 155%;
+}
+
+.promo > .card > .content > .promo_input{
+    font-weight: var(--regular);
+    width: 220px;
+    padding: 9px 0 9px 25px;
+    color: var(--dark);
+    background-color: var(--white);
+    border-radius: 30px;
+}
+
+.promo > .card > .content > .promo_input::placeholder{
+    color: var(--light-gray);
+}
+
+.promo > .card > .content > .promo_btn{
+    color: var(--white);
+    font-weight: var(--regular);
+    color: var(--white);
+    border: 2px solid var(--white);;
+    border-radius: 30px;
+    padding: 9px 53px;
+}
+
+.promo > .card > .img{
+    max-width: 189px;
+}
+
+.brands{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.brands > .brands-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+}
+
+.brands > .brands-list > .item{
+    background-color: var(--white);
+    padding: 35px 60px;
+}
+
+.sale{
+    background-image: url(img/Rectangle\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 440px;
+}
+
+.sale > .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 250px;
+    padding-top: 130px;
+    gap: 30px;
+}
+
+.sale > .content > .title{
+    font-size: 45px;
+    font-weight: var(--bold);
+    color: var(--white);
+}
+
+.sale > .content > .sale_text{
+    color: var(--white);
+    font-weight: var(--regular);
+    width: 23%;
+}
+
+.sale > .content > .sale_btn{
+    color: var(--white);
+    font-weight: var(--regular);
+    color: var(--white);
+    border: 2px solid var(--white);;
+    border-radius: 30px;
+    padding: 9px 65px;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px 0;
+    gap: 30px;
+    border-bottom: 1px solid var(--lighter-gray);
+}
+
+.popular_categories{
+    width: 16.5%;
+}
+
+.categories > .popular_categories > h3{
+    border-bottom: 1px solid var(--lighter-gray);
+    padding-bottom: 20px;
+    font-weight: var(--medium);
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.category-list{
+    padding-top: 20px;
+    color: var(--gray);
+    line-height: 25px;
+}
+
+.footer_line{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    gap: 180px;
+}
+
+.inf{
+    background-color: var(--lighter-gray);
+    display: flex;
+    justify-content: space-around;
+    padding: 22px 0;
+    color: var(--gray);
+    gap: 100px;
+}
